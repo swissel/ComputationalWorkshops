@@ -1,0 +1,50 @@
+File: VY2PLA_1H_FMT.txt                       Version: NSSDC 12/31/98 MIT
+-------------------------------------------------------------------------
+
+The files in this directory contain Voyager hourly average plasma data.
+The plasma parameters are obtained by finding the best fit of a convected
+isotropic Maxwellian distribution to the data. One sigma errors
+are typically less than 0.5% in the speed and VR, less than 5% for the
+density and thermal speed, and vary greatly for VT and VN.
+Sampling times range from 12 to 192 sec., with sampling generally more
+frequent early in the mission. The columns are:
+
+1) Year                                         
+2) day of year (day 1 is Jan. 1)
+3) hour
+4) proton speed in km/s (magnitude of V)
+5) proton density in cm-3
+6) proton thermal speed in km/s (proton temperature in eV = .0052 times the
+square of the thermal speed)
+7) VR
+8) VT (WARNING: this parameter is often NOT reliable after 1989)
+9) VN (WARNING: this parameter is often NOT reliable after 1989)
+
+The velocity components are given in the RTN coordinate system,  
+where R is radially outward, T is in a plane parallel to the solar
+equatorial plane and positive in the direction of solar rotation,
+and N completes a right-handed system.
+
+The form of the file name is usually of a form similar to
+sc_type_start_end_dis.suff
+where any of these may be missing.
+sc        is Space Craft v1 or v2
+type      is type of data, usually the same as the directory name, (e.g. 
+          sedr ha )
+start     start time year.day.hour ( day and hour may be missing)
+end       end   time year.day.hour ( day and hour may be missing)
+dis       descriptor, if any addition processing is needed, (e.g. filt 
+          implies the data has been filtered, see README in that 
+          directory.)
+suff      suffix, Z, gz implies the type of compression etc.
+
+The formats may describe more fields that the data sets contain.
+In that case, the fields in the description should just be ignored.
+In some cases, 00000 is used as a fill, and implies the that data
+is unavailable.  Common sense is required to distinguish missing data
+from true zeros.
+
+ 
+Please consult with us, or at least send preprints, when you use this data to
+prevent grievous errors or misconceptions. (John Richardson, jdr@space.mit.edu)
+
