@@ -11,5 +11,5 @@ To get started right away or to try out the activities, click below to set up a 
 
 For the more advanced user, install and run these notebooks on your own computer by:
 1. Install [Anaconda Python3](https://www.anaconda.com/distribution/)
-2. git clone this repository
+2. [git clone](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository) this [repository](https://github.com/swissel/ComputationalWorkshops)
 3. [Start a Jupyter notebook server](https://unidata.github.io/online-python-training/notebook.html) in the directory with the repository
